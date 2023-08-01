@@ -1,5 +1,6 @@
 const activitiesRouter = require("express").Router();
-const { postActivities, getActivities } = require("../controllers/handleActivities")
+const { postActivities } = require("../controllers/postActivities");
+const { getActivities } = require("../controllers/getActivities");
 
 activitiesRouter.post("", postActivities);
 activitiesRouter.get("", getActivities);

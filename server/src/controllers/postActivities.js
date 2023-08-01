@@ -24,17 +24,4 @@ const postActivities = async (req, res) => {
     }
 };
 
-const getActivities = async (req, res) => {
-
-    try {
-        const activities = await Activity.findAll();
-        res.status(200).json(activities);
-    } catch (error) {
-        res.status(500).json({ message: error.message })
-    }
-}
-
-module.exports = {
-    postActivities,
-    getActivities
-}
+module.exports = { postActivities };
