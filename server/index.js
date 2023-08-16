@@ -14,9 +14,9 @@ conn.sync({ force: true }).then(() => {
           id: country.cca3,
           name: country.name.common,
           flag: country.flags.png,
-          continent: country.continents ? country.continents[0] : "No encontre continente!",
-          capital: country.capital ? country.capital[0] : "No encontre capital!",
-          subRegion: country.subregion,
+          continent: country.continents ? country.continents[0] : "Continent not found!",
+          capital: country.capital ? country.capital[0] : "Capital not found!",
+          subRegion: country.subregion ? country.subregion : "SubRegion not found!",
           area: country.area,
           population: country.population,
         }

@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../../assets/AdobeStock_627732743.jpeg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.containerActivity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: auto;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    color: black;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    padding-bottom: 10px;
+}
+
+.form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+h2 {
+    padding: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #414141;
+}
+
+p {
+    color: red;
+}
+
+.divLabel {
+    display: flex;
+}
+
+label {
+    padding: 10px;
+}
+
+.input, select {
+    display: block;
+    height: 50px;
+    width: 90%;
+    margin: 0 auto;
+    border: 1 solid;
+}
+
+.buttonForm {
+    cursor: pointer;
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    margin-top: 4px;
+    border: none;
+    text-transform: uppercase;
+    color: black;
+    background: orange;
+}
+
+.buttonForm:hover {
+    box-shadow: 0 5px 15px orange;
+}
+
+.labelForm {
+    display: flex;
+    justify-content: center;
+}
+
+.ButtonCountries {
+    margin: 5px;
+}

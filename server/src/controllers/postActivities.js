@@ -1,9 +1,9 @@
 const { Activity, Country } = require("../db");
 
 const postActivities = async (req, res) => {
-    const { name, difficulty, duration, season, countries } = req.body;
+    const { name, difficulty, duration, season, countries=[] } = req.body;
 
-    if(!name || !difficulty || !duration || !season || !countries) {
+    if(!name || !difficulty || !duration || !season) {
         return res.status(401).json({ message: "Faltan datos" })
     }
 
@@ -18,7 +18,7 @@ const postActivities = async (req, res) => {
             },
         });
         await activity.setCountries(countriesInDB)
-        res.status(200).json({ message: "Actividad creada exitosamente!"})
+        res.status(200).json({activity})
     } catch (error) {
         res.status(500).json({ error: error.message})
     }

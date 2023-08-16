@@ -12,7 +12,7 @@ async function getCountry(req, res) {
         });
         res.status(200).json(country);
     } catch (error) {
-        res.status(500).json({ error: error.message })
+        res.status(500).send({ error: error.message })
     }
 };
 

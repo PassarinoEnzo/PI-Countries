@@ -12,12 +12,9 @@ async function getName(req, res) {
                 },
             },
         });
-        if (countries.length === 0) {
-            return res.status(404).json({ message: 'No se encontraron países con el nombre proporcionado.' });
-        }
         return res.status(200).json(countries);
     } catch (error) {
-        res.status(500).json({ message: `Error al buscar paises.` })
+        res.status(500).json({ message: error.message })
     }
 };
 

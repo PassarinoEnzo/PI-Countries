@@ -1,0 +1,74 @@
+.divHome {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: url("../../assets/AdobeStock_627313866.jpeg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.divFilter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 500px;
+    background-color: transparent;
+    border-radius: 2%;
+    border: 1px solid;
+}
+
+.divCards {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 70%;
+}
+
+.divCards:hover > :not(:hover) {
+    opacity: 0.5;
+}
+
+.labelFilter {
+    color: black;
+    font-weight: bold;
+}
+
+.buttonReset {
+    width: 200px;
+    height: 50px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.divPage {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 29%;
+    margin-right: 19px;
+    gap: 10px;
+}
+
+.buttonPage {
+    width: 43%;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border-radius: 2%;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.buttonPage:hover {
+    box-shadow: 0 5px 15px black;
+}
+
+.inputPage {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}

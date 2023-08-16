@@ -1,0 +1,106 @@
+.containerDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: url("../../assets/AdobeStock_629276016.jpeg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.divDetail {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    color: black;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    gap: 10px;
+    margin: 40px;
+}
+
+.secImg {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.secDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgDetail {
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.nameDetail {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.spanDetail {
+    display: block;
+    margin: 10px;
+}
+
+.spanTitle {
+    font-weight: bold;
+}
+
+.divActivities {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.secActivity {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid;
+    margin: 5px;
+    background-color: white;
+}
+
+.imgContinent {
+    width: 300px;
+    height: 200px;
+}
+
+.divButtons {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.linkUpdate {
+    text-decoration: none;
+    color: white;
+    width: auto;
+}
+
+.buttonDelete {
+    width: 50%;
+    background-color: black;
+    color: white;
+}
+
+.buttonUpdate {
+    width: 50%;
+    background-color: black;
+}
+
+.titleActivity {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
